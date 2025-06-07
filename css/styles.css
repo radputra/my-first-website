@@ -71,10 +71,6 @@ body {
   height: 24px;
 }
 
-.filter-icon {
-  width: 24px;
-  cursor: pointer;
-}
 
 .hero-text {
   padding: 0 32px 4px;
@@ -92,6 +88,7 @@ body {
   margin-top: 4px;
 }
 
+/* Home Page */
 .feature-links {
   display: flex;
   gap: 20px;
@@ -112,7 +109,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  aspect-ratio: 2 / 1.2; /* Keeps a nice shape */
+  aspect-ratio: 2 / 1.2;
 }
 
 .feature-card span {
@@ -128,7 +125,7 @@ body {
 }
 
 .rooms {
-  padding: 12px 32px 4px; /* Same horizontal padding as .feature-links */
+  padding: 12px 32px 4px; 
 }
 
 .rooms h3 {
@@ -138,9 +135,9 @@ body {
 
 .room-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+  grid-template-columns: repeat(6, 1fr); 
   gap: 16px;
-  padding: 0; /* REMOVE side padding here */
+  padding: 0; 
 }
 
 .room-card {
@@ -172,6 +169,131 @@ body {
 }
 
 footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Browse Page */
+.browse-header {
+  padding: 0 32px;
+  margin-top: 12px;
+}
+
+.browse-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.browse-header p {
+  color: #777;
+  margin-top: 4px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 16px 32px 64px;
+}
+
+.product-card {
+  position: relative;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 12px;
+  aspect-ratio: 1 / 1;
+  background-color: #fff;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-weight: 600;
+  margin: 6px 0 2px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 0;
+  color: #444;
+}
+
+.product-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #444;
+}
+
+.stock {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  padding-left: 16px;
+}
+
+.stock.available::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.stock.low::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    border-radius: 50%;
+
+}
+
+.stock.out::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 50%;
+}
+
+.product-card.out-of-stock {
+  background-color: #eee;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* Footer when content is too little */
+.browse-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.product-grid {
+  flex-grow: 1;
+}
+
+footer {
+  margin-top: auto;
   text-align: center;
   padding: 20px;
   color: #999;

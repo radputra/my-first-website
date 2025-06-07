@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BROSA | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    <header>
-        <h1>BROSA</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browse.html">Browse</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <p>Browse</p>
-        </section>
-    </main>
+<div class="browse-wrapper">
+  <header class="top-bar">
+    <button class="hamburger">&#9776;</button>
 
-    <footer>
-        <p>&copy; 2025 BROSA</p>
-    </footer>
+    <a href="index.html" class="logo">
+        <img src="images/icons/logo.png" alt="BROSA logo" />
+    </a>
+    <div class="header-icons">
+        <img src="images/icons/wishlist.png" alt="Wishlist" />
+        <img src="images/icons/cart.png" alt="Cart" />
+    </div>
+  </header>
+
+  <section class="search-section">
+    <input type="text" placeholder="Search now" />
+    <button><img src="images/icons/search.png" alt="Search" /></button>
+  </section>
+
+  <section class="hero-text">
+    <h2>Products</h2>
+    <p>Browse all our products</p>
+  </section>
+
+ <section class="product-grid">
+    
+    <!-- Product Card 1 -->
+    <div class="product-card">
+      <span class="stock available">Available</span>
+      <img src="images/products/brosa_goldie.webp" alt="Brosa Goldie" />
+      <h4>Brosa Goldie</h4>
+      <p>Swivel Armchair</p>
+      <strong>$399.99</strong>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+      <span class="stock low">Low stock</span>
+      <img src="images/products/brosa_imogie.webp" alt="Brosa Imogen" />
+      <h4>Brosa Imogen</h4>
+      <p>Armchair</p>
+      <strong>$299.99</strong>
+    </div>
+
+    <!-- Product Card 3 (Out of Stock) -->
+    <div class="product-card out-of-stock">
+      <span class="stock out">OUT OF STOCK</span>
+      <img src="images/products/ovela_karl.webp" alt="Ovela Karl" />
+      <h4>Ovela Karl</h4>
+      <p>Sofa Bed</p>
+      <strong>$209.99</strong>
+    </div>
+
+    <!-- Product Card 4 (Out of Stock) -->
+    <div class="product-card out-of-stock">
+      <span class="stock out">OUT OF STOCK</span>
+      <img src="images/products/brosa_bordo.webp" alt="Brosa Bordo" />
+      <h4>Brosa Bordo</h4>
+      <p>Ottoman</p>
+      <strong>$399.99</strong>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BROSA</p>
+  </footer>
+</div>
 </body>
 </html>

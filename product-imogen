@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BROSA | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <header class="top-bar">
+    <button class="hamburger">&#9776;</button>
+
+    <a href="index.html" class="logo">
+        <img src="images/icons/logo.png" alt="BROSA logo" />
+    </a>
+    <div class="header-icons">
+        <img src="images/icons/wishlist.png" alt="Wishlist" />
+        <img src="images/icons/cart.png" alt="Cart" />
+    </div>
+  </header>
+
+  <section class="search-section">
+    <input type="text" placeholder="Search now" />
+    <button><img src="images/icons/search.png" alt="Search" /></button>
+  </section>

@@ -25,3 +25,7 @@
     <input type="text" placeholder="Search now" />
     <button><img src="images/icons/search.png" alt="Search" /></button>
   </section>
+
+  <section class="hero-text">
+    <h2>Imogen</h2>
+  </section>

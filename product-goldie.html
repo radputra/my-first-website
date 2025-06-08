@@ -26,6 +26,30 @@
     <button><img src="images/icons/search.png" alt="Search" /></button>
   </section>
 
-  <section class="hero-text">
-    <h2>Goldie</h2>
-  </section>
+  <main class="product-detail">
+    <div class="product-gallery">
+    <img id="mainImage" src="images/products/brosa_goldie.webp" alt="Goldie Front View" class="main-image" />    
+
+      <div class="thumbnail-row">
+        <img src="images/products/brosa_goldie_front.webp" alt="Front" class="thumbnail" onclick="swapImage(this)" />
+        <img src="images/products/brosa_goldie_side.webp" alt="Side" class="thumbnail" onclick="swapImage(this)" />
+        <img src="images/products/brosa_goldie_back.webp" alt="Back" class="thumbnail" onclick="swapImage(this)" /> 
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Brosa Goldie</h1>
+      <p class="subtitle">Swivel Armchair</p>
+      <p class="price">$399.99</p>
+
+      <button class="add-to-cart">Add to cart</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BROSA</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

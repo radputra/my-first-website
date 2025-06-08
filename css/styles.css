@@ -368,4 +368,87 @@ footer {
     font-size: 16px;
     cursor: pointer;
     width: 480px;
+    text-align: center;             
+    text-decoration: none;      
+}
+
+/* Checkout Page */
+
+.checkout-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.checkout-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-box h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.checkout-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.checkout-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #555;
+}
+
+.checkout-info .icon {
+  width: 28px;
+  height: 28px;
+}
+
+.edit-btn {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.summary-line.total {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.place-order-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.place-order {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 60%;
+  max-width: 300px;
 }

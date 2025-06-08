@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BROSA | Home</title>
+  <title>Imogen</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -26,6 +26,34 @@
     <button><img src="images/icons/search.png" alt="Search" /></button>
   </section>
 
-  <section class="hero-text">
-    <h2>Imogen</h2>
-  </section>
+  <main class="product-detail">
+    <div class="product-gallery">
+    <img id="mainImage" src="images/products/brosa_imogie.webp" alt="Goldie Front View" class="main-image" />    
+
+      <div class="thumbnail-row">
+        <img src="images/products/brosa_imogen_front.webp" alt="Front" class="thumbnail" onclick="swapImage(this)" />
+        <img src="images/products/brosa_imogen_side.webp" alt="Side" class="thumbnail" onclick="swapImage(this)" />
+        <img src="images/products/brosa_imogen_back.webp" alt="Back" class="thumbnail" onclick="swapImage(this)" /> 
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Brosa Goldie</h1>
+      <p class="subtitle">Swivel Armchair</p>
+      <p class="price">$299.99</p>
+
+      <a href="checkout.html"
+        class="add-to-cart"
+        onclick="addToCart('Brosa Imogen', 299.99, 'images/products/imogen.jpg')">
+        Add to cart
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BROSA</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

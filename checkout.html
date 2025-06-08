@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | BROSA</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <a href="index.html" class="logo">
+      <img src="images/icons/logo.png" alt="BROSA logo">
+    </a>
+  </header>
+
+  <main class="checkout-container">
+    <section class="checkout-box">
+      <h2>Shipping</h2>
+      <div class="checkout-row">
+        <div class="checkout-info">
+          <img src="images/icons/shipping.png" alt="Shipping" class="icon">
+          <span>Add shipping address</span>
+        </div>
+        <button class="edit-btn">Add</button>
+      </div>
+    </section>
+
+    <section class="checkout-box">
+      <h2>Payment</h2>
+      <div class="checkout-row">
+        <div class="checkout-info">
+          <img src="images/icons/payment.png" alt="Payment" class="icon">
+          <span>Add payment info</span>
+        </div>
+        <button class="edit-btn">Add</button>
+      </div>
+    </section>
+
+    <section class="checkout-box">
+        <h2>Summary</h2>
+        <div class="summary-line">
+            <span>Subtotal</span><span id="subtotal">$0.00</span>
+        </div>
+        <div class="summary-line">
+            <span>Shipping (Flat)</span><span id="shipping">$19.99</span>
+        </div>
+        <hr>
+        <div class="summary-line total">
+            <strong>TOTAL</strong><strong id="total">$0.00</strong>
+        </div>
+    </section>
+
+    <div class="place-order-container">
+      <button class="place-order">Place order</button>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

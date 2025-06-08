@@ -450,5 +450,208 @@ footer {
   border-radius: 20px;
   cursor: pointer;
   width: 60%;
+  text-align: center;
+  text-decoration: none;
   max-width: 300px;
+}
+
+/* Confirmation Page */
+.confirmation-box {
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
+
+.confirmation-box img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 24px;
+}
+
+.confirmation-box h2 {
+  color: #1a73e8;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.confirmation-box p {
+  font-size: 15px;
+  color: #666;
+  margin: 0 auto 28px;
+  line-height: 1.4;
+}
+
+.confirmation-box a {
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+  padding: 14px 0;
+  display: block;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  transition: background-color 0.2s ease;
+}
+
+body.confirmation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Mobile Styles */
+/* Home Page */
+@media (max-width: 480px) {
+
+  .top-bar {
+    padding: 16px;
+  }
+
+  .logo img {
+    height: 28px;
+  }
+
+  .header-icons img {
+    width: 24px;
+  }
+
+  .search-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 16px 20px;
+    gap: 8px;
+  }
+
+  .search-section input {
+    flex: 1;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .search-section button img {
+    width: 20px;
+  }
+
+  .hero-text {
+    padding: 0 16px 12px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .feature-links {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .feature-card img {
+    aspect-ratio: 2 / 1.1;
+    border-radius: 16px;
+  }
+
+  .feature-card span {
+    font-size: 20px;
+  }
+
+  .rooms {
+    padding: 24px 16px;
+  }
+
+  .room-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .room-card span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .room-card {
+    border-radius: 8px;
+  }
+
+  .room-card img {
+    border-radius: 8px;
+  }
+}
+
+/* Product page */
+@media (max-width: 480px) {
+  .product-detail {
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .product-gallery {
+    width: 100%;
+  }
+
+  .main-image {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .thumbnail-row {
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .product-info h1 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    font-size: 24px;
+    margin: 16px 0 20px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    max-width: 220px;
+    font-size: 16px;
+    padding: 16px;
+    margin-top: 80px;
+    display: block;
+    margin: auto;
+  }
+}
+
+/* Checkout Page */
+@media (max-width: 480px) {
+  body.checkout-page {
+    padding-top: 40px; /* adjust value as needed */
+  }
 }
